@@ -1,8 +1,17 @@
+# start my stuff
+
+GRAILS_HOME=/usr/share/grails; export GRAILS_HOME
+export PATH=/opt/local/bin:/opt/local/sbin:$GRAILS_HOME/bin:$PATH
+
+alias hp="cd ~/Sites/akqa/hp"
+
+# end my stuff
+
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
-export PROJECTS=~/Development
+export PROJECTS=~/Sites
 
 # source every .zsh file in this rep
 for config_file ($ZSH/**/*.zsh) source $config_file
