@@ -1,4 +1,6 @@
-# holman does dotfiles
+# sumeetjain does dotfiles
+
+These are based very heavily on [Holman's dotfiles](http://github.com/holman/dotfiles/).
 
 ## dotfiles
 
@@ -8,7 +10,7 @@ I was a little tired of having long alias files and everything strewn about (whi
 
 ## install
 
-- `git clone git://github.com/holman/dotfiles ~/.dotfiles`
+- `git clone git://github.com/sumeetjain/dotfiles ~/.dotfiles`
 - `cd ~/.dotfiles`
 - `rake install`
 
@@ -23,6 +25,9 @@ Everything's built around topic areas. If you're adding a new area to your forke
 ## what's inside
 
 A lot of what's inside is just aliases: `gs` for `git status`, `gl` for `git pull --rebase --prune`, for example. You can browse the `aliases.zsh` files in each topic directory. There's also a collection of scripts in `bin` you can browse. A few notable ones:
+
+###git
+- `gpa [message]` adds everything from a dirty repository, creates a commit, and pushes it at once.
 
 ###rails
 - `s` pings your system for any running Rails apps, and `deathss` will then kill all of them indiscriminately. `ss` starts up a new Rails server on the next available port- if 3000 is taken, it'll spin up your server on 3001.
