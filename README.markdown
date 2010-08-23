@@ -17,8 +17,8 @@ I was a little tired of having long alias files and everything strewn about (whi
 3. `rake install`
 
 ### awesome installation
-1. Install [homebrew](http://github.com/mxcl/homebrew/blob/master/README.md): `ruby -e "$(curl -fsS http://gist.github.com/raw/323731/install_homebrew.rb)"`
-2. Install grc (for colors!): `brew install grc`.
+1. `ruby -e "$(curl -fsS http://gist.github.com/raw/323731/install_homebrew.rb)"` *installs [homebrew](http://github.com/mxcl/homebrew/blob/master/README.md)*
+2. `brew install grc` *installs grc (for colors)*
 3. Fork this repository.
 4. `git clone [your forked repo address] ~/.dotfiles`
 5. `cd ~/.dotfiles`
