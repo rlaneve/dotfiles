@@ -9,7 +9,7 @@ Your dotfiles are how you personalize your system. These are mine. The very prej
 I was a little tired of having long alias files and everything strewn about (which is extremely common on other dotfiles projects, too). That led to this project being much more topic-centric. I realized I could split a lot of things up into the main areas I used (Ruby, git, system libraries, and so on), so I structured the project accordingly.
 
 ## install
-
+I suggest switching from bash to zsh. *For Mac users: System Preferences > Accounts, right-click on 'My Account', choose Advanced Options. Change "Login shell" to /bin/zsh. Restart Terminal (quit and reopen).*
 
 ### basic installation
 1. `git clone git://github.com/sumeetjain/dotfiles ~/.dotfiles`
@@ -18,6 +18,7 @@ I was a little tired of having long alias files and everything strewn about (whi
 
 ### awesome installation
 1. `ruby -e "$(curl -fsS http://gist.github.com/raw/323731/install_homebrew.rb)"` *installs [homebrew](http://github.com/mxcl/homebrew/blob/master/README.md)*
+2. Restart Terminal.
 2. `brew install grc` *installs grc (for colors)*
 3. Fork this repository.
 4. `git clone [your forked repo address] ~/.dotfiles`
