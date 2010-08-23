@@ -10,9 +10,18 @@ I was a little tired of having long alias files and everything strewn about (whi
 
 ## install
 
-- `git clone git://github.com/sumeetjain/dotfiles ~/.dotfiles`
-- `cd ~/.dotfiles`
-- `rake install`
+
+### basic installation
+1. `git clone git://github.com/sumeetjain/dotfiles ~/.dotfiles`
+2. `cd ~/.dotfiles`
+3. `rake install`
+
+### awesome installation
+1. Install [homebrew](http://github.com/mxcl/homebrew/blob/master/README.md): `ruby -e "$(curl -fsS http://gist.github.com/raw/323731/install_homebrew.rb)"`
+2. Install grc (for colors!): `brew install grc`.
+3. `git clone git://github.com/sumeetjain/dotfiles ~/.dotfiles`
+4. `cd ~/.dotfiles`
+5. `rake install`
 
 The install rake task will symlink the appropriate files in `.dotfiles` to your home directory. Everything is configured and tweaked within `~/.dotfiles`, though.
 
