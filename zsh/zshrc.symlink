@@ -3,8 +3,6 @@
 GRAILS_HOME=/usr/share/grails; export GRAILS_HOME
 export PATH=/opt/local/bin:/opt/local/sbin:$GRAILS_HOME/bin:$PATH
 
-alias hp="cd ~/Sites/akqa/hp"
-
 # end my stuff
 
 # shortcut to this dotfiles path is $ZSH
