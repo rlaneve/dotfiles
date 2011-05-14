@@ -8,7 +8,7 @@ export EDITOR='mate -w'
 export PATH=".:/usr/local/bin:/usr/local/sbin:$ZSH/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 export LSCOLORS="exfxcxdxbxegedabagacad"
-export CLICOLOR=true
+#export CLICOLOR=true
 
 fpath=($ZSH/zsh/functions $fpath)
 
