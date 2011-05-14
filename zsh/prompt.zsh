@@ -2,11 +2,11 @@
 # http://github.com/ehrenmurdick/config/blob/master/zsh/prompt.zsh
 
 git_branch() {
-  echo $(git symbolic-ref HEAD 2>/dev/null | awk -F/ {'print $NF'})
+  echo $(/usr/bin/git symbolic-ref HEAD 2>/dev/null | awk -F/ {'print $NF'})
 }
 
 git_dirty() {
-  st=$(git status 2>/dev/null | tail -n 1)
+  st=$(/usr/bin/git status 2>/dev/null | tail -n 1)
   if [[ $st == "" ]]
   then
     echo ""
@@ -21,7 +21,7 @@ git_dirty() {
 }
 
 git_prompt_info () {
- ref=$(git symbolic-ref HEAD 2>/dev/null) || return
+ ref=$(/usr/bin/git symbolic-ref HEAD 2>/dev/null) || return
 # echo "(%{\e[0;33m%}${ref#refs/heads/}%{\e[0m%})"
  echo "${ref#refs/heads/}"
 }
@@ -37,7 +37,7 @@ project_name_color () {
 }
 
 unpushed () {
-  git cherry -v origin/$(git_branch) 2>/dev/null
+  /usr/bin/git cherry -v origin/$(git_branch) 2>/dev/null
 }
 
 need_push () {
